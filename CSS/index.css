@@ -122,3 +122,32 @@ h3 {
   color: white;
   text-align: center;
 }
+
+/* For timer */
+body {
+  position: relative;
+}
+.heading {
+  position: absolute;
+  /* margin-left: -10%; */
+  top: 10%;
+  left: 0;
+}
+.countdown {
+  /* color: #ffc107; */
+  display: flex;
+  position: absolute;
+  font-size: 5em;
+  top: 25%;
+  left: 15%;
+}
+.leftinfo {
+  position: absolute;
+  left: 7%;
+  top: 50%;
+}
+.leftbtn {
+  position: absolute;
+  left: 22%;
+  top: 65%;
+}
