@@ -1,0 +1,49 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* heading fonts */
+.headfonts {
+  font-family: "Graduate", cursive;
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.headfonts:hover {
+  color: #c2c0bde3;
+}
+
+.headfonts:active {
+  font-size: 1.1em;
+  color: white;
+  font-weight: 600;
+}
+
+/* paragraph fonts */
+.parafonts {
+  color: white;
+}
+
+/* body */
+body {
+  background-image: url("Images/");
+}
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* navbar item class */
+.nav-link {
+  text-decoration: none;
+}
+
+/* aligining navbar items to the right */
+.navbar-nav {
+  /* border: 2px solid red; */
+  margin-left: auto;
+}
