@@ -16,15 +16,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
+    <!-- jQuery CDn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <!-- css file -->
     <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/training.css">
+
+    <!-- round slider -->
+    <script src="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/round-slider@1.6.1/dist/roundslider.min.css">
 
     <!-- splide files for slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
 
-    <!-- jQuery CDn -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
 </head>
 
@@ -60,14 +67,75 @@
             </div>
         </div>
     </nav>
+    <main>
+        <section>
 
+            <div class="textContainer">
+                <h2 class="headfonts">TRACK YOUR RECORD</h2>
+                <p>Whether you're setting a new personal best or taking a stroll outside, every minute matters!. Use our
+                    <strong>TRACKER</strong> to track all
+                    your activities and watch those minutes add up!
+                </p>
+            </div>
+            <div class="timerContainer">
+                <form action="#">
+                    <label for="time">Enter Minutes:</label>
+                    <input type="text" name="time" id="time">
+                    <button id="start">START</button>
+                    <button id="stop">STOP</button>
+                    <button id="reset">RESET</button>
+                </form>
+
+                <div id="roundSlider"></div>
+
+                <!-- <div class="countdown">
+                    <div class="sec">time
+                    </div>
+                    <h3>Seconds</h3>
+                </div> -->
+            </div>
+        </section>
+        <section>
+            <div class="textContainer">
+                <h2 class="headfonts">STRONGMAN FITNESS TRAINING SERIES - FREE FOR EVERYONE!</h2>
+                <p class="white">Want to keep moving while you're at home? We have the workouts for you! On the Planet
+                    Fitness App you
+                    can access our exclusive training series, powered by iFit. You'll find six fun and motivating
+                    series, led by some of the best trainers in the industry.
+                    <button id="showDiv">Read More</button>
+                </p>
+                <div id="listPara">
+                    <ul class="white">
+                        <li>Beginner Cardio Series & Intermediate Cardio Series</li>
+                        <li>Beginner Strength Series & Intermediate Strength Series</li>
+                        <li>Beginner Dumbbell Series & Intermediate Dumbbell Series</li>
+                    </ul>
+                    <!-- <p class="white"> -->
+                    <p class="white">
+                        Designed for beginner and intermediate levels - there's a series for everyone! As you progress
+                        in
+                        each
+                        series, workouts will become more challenging - and even more FUN!
+                    </p>
+                </div>
+            </div>
+            <div class="timerContainer">
+                <iframe width="500" height="315" src="https://www.youtube.com/embed/-BYrrah2Yrs"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+    </main>
     <!-- bootstrap JS bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
         crossorigin="anonymous"></script>
 
+
     <!-- js files -->
-    <script src="JS/index.js"></script>
+    <script src="JS/training.js"></script>
 </body>
 
 </html>
