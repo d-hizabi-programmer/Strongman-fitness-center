@@ -20,7 +20,8 @@ section:nth-of-type(even) {
   flex-direction: column;
   /* border: 2px solid yellow; */
   justify-content: center;
-  align-items: center;
+  /* align-content: left; */
+  /* align-items: center; */
 }
 
 #roundSlider {
@@ -35,6 +36,7 @@ section:nth-of-type(even) {
   color: #ffc107;
   border: none;
   text-decoration: underline;
+  margin-top: 0.5em;
 }
 #listPara {
   display: none;
@@ -52,4 +54,19 @@ section:nth-of-type(even) {
 .headfonts {
   text-align: left;
   padding-left: 0.34em;
+  /* border: 2px solid red; */
+}
+
+.black {
+  text-align: left;
+  padding: 0.5em;
+  color: black;
+}
+img {
+  margin: auto;
+}
+footer {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1em;
 }
