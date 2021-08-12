@@ -1,0 +1,54 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #ffc107;
+  padding: 1em;
+}
+
+li {
+  color: black;
+  font-weight: bold;
+}
+ol li a {
+  text-decoration: none;
+  color: black;
+}
+
+#enduranceLink:hover,
+#strengthLink:hover {
+  color: #ffc107;
+}
+
+p {
+  padding: 1em;
+  text-align: justify;
+}
+
+.black {
+  color: black;
+}
+
+.yellow {
+  color: #ffc107;
+}
+
+#enduranceLink,
+#strengthLink {
+  color: black;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  padding: 0.2em;
+}
+
+#endurance,
+#strength {
+  display: none;
+}
+
+/* .show {
+  display: block;
+} */

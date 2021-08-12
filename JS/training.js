@@ -1,3 +1,8 @@
+$("#showDiv").click(() => {
+  $("#listPara").show();
+  $("#showDiv").hide();
+});
+
 const countdown = (entered) => {
   var usertimeinsec = entered * 60;
   var final = usertimeinsec / 100;
