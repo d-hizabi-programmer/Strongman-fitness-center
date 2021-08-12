@@ -70,3 +70,8 @@ footer {
   font-weight: 600;
   padding-bottom: 1em;
 }
+
+#round {
+  display: flex;
+  flex-direction: column;
+}

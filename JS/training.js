@@ -1,19 +1,31 @@
-var minutes = parseInt($("#time").val());
-$("#start").click(() => {
-  alert("start button pressed");
-  $("#roundSlider").animate(
-    {
-      borderWidth: "50px",
-    },
-    minutes * 60 * 1000
-  );
-});
+const countdown = (entered) => {
+  var usertimeinsec = entered * 60;
+  var final = usertimeinsec / 100;
+  const now = new Date().getTime();
+  var addon = now + usertimeinsec;
+  const gap = addon - now;
+  usertimeinsec--;
+  document.querySelector(".sec").innerText = gap;
 
-$("#showDiv").click(function () {
-  $("#listPara").show();
-  $("#showDiv").hide();
+  if (gap <= -1) {
+    //   alert("Congrats!!!");
+    document.querySelector(".sec").innerText = 0;
+  }
+
+  $(document).ready(function () {
+    $("#slider").roundSlider({
+      sliderType: "min-range",
+      value: gap / final,
+    });
+  });
+};
+$("#press").click(() => {
+  // console.log("inside clocl ");
+  var entered = prompt();
+  console.log(entered);
+  // let usertime = entered;
+
+  setInterval(() => {
+    countdown(entered);
+  }, 1000);
 });
-// $("#roundSlider").animate({
-//   opacity: 0.4,
-//   borderWidth: "10px",
-// });
