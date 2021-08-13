@@ -20,10 +20,19 @@ section:nth-of-type(even) {
   flex-direction: column;
   /* border: 2px solid yellow; */
   justify-content: center;
+  position: relative;
   /* align-content: left; */
   /* align-items: center; */
 }
-
+.sec{
+  position: absolute;
+  right: -12em;
+  font-size: 0.5em;
+}
+#slider{
+  margin-bottom: 1em;
+  padding: 0 0 0 2em;
+}
 #roundSlider {
   margin: 1em;
   border: 10px solid #ffdf7e;

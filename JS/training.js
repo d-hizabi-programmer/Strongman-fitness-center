@@ -3,34 +3,32 @@ $("#showDiv").click(() => {
   $("#showDiv").hide();
 });
 
-const countdown = (entered) => {
-  var usertimeinsec = entered * 60;
-  var final = usertimeinsec / 100;
-  const now = new Date().getTime();
-  var addon = now + usertimeinsec;
-  const gap = addon - now;
-  usertimeinsec--;
-  document.querySelector(".sec").innerText = gap;
+$("#press").mousedown(total);
+function total() {
+  let entered = prompt('Enter Number Of Minutes You Want To Exercise');
+  console.log(entered);
+  let usertimeinsec = entered * 60;
+  let final = usertimeinsec / 100;
+  const countdown = () => {
+    const now = new Date().getTime();
 
-  if (gap <= -1) {
-    //   alert("Congrats!!!");
-    document.querySelector(".sec").innerText = 0;
-  }
-
-  $(document).ready(function () {
+    let addon = now + usertimeinsec;
+    //   console.log(addon);
+    const gap = addon - now;
+    //   console.log(gap);
+    usertimeinsec--;
+    document.querySelector(".sec").innerText = gap + ' Seconds Left!';
+    if (gap <= -1) {
+      //   alert("Congrats!!!");
+      document.querySelector(".sec").innerText = 0;
+    }
+    
     $("#slider").roundSlider({
       sliderType: "min-range",
       value: gap / final,
     });
-  });
-};
-$("#press").click(() => {
-  // console.log("inside clocl ");
-  var entered = prompt();
-  console.log(entered);
-  // let usertime = entered;
-
+  };
   setInterval(() => {
-    countdown(entered);
+    countdown();
   }, 1000);
-});
+}

@@ -9,3 +9,7 @@ $("#strengthLink").click(() => {
   $("#strengthLink").css("color", "#ffc107");
   //   alert("hi");
 });
+
+$("#endurance h3").hover(function () {
+  $("#endurance li").toggle();
+});
