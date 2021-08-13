@@ -20,7 +20,7 @@ var padSingleDigit = function (num) {
 };
 // for timer on home page
 const countdown = () => {
-  const lastdate = new Date("August 20,2021 00:00:00").getTime();
+  const lastdate = new Date("August 21,2021 00:00:00").getTime();
   const now = new Date().getTime();
   const gap = lastdate - now;
   console.log(gap);
