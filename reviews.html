@@ -18,7 +18,7 @@
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
     <!-- css file -->
-    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/reviews.css">
 
     <!-- splide files for slider -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
@@ -64,57 +64,53 @@
             </div>
         </nav>
         <main>
-            <div class="splide" id="splide">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide img1 ">
-
-                            <div class="heading">
-                                <h1 class="headfonts">Remaining Time!!!</h1>
-                            </div>
-                            <div class="countdown ">
-                                <div class="time day white headfonts">&nbsp;
-                                </div>
-
-                                <div class="time hr white headfonts">&nbsp;
-                                </div>
-
-                                <div class="time min white headfonts">&nbsp;
-                                </div>
-
-                                <div class="time sec white headfonts">&nbsp;
-                                </div>
+            <section id="contactUs">
+                <div>
+                    <form action="#" id="contactForm">
+                        <h4 class="headfonts"> Contact Us</h4>
+                        <label class="left headfonts white" for="name">Name:</label>
+                        <input class="parafonts" type="text" name="name" id="myName"><span></span>
 
 
-                            </div>
-                            <h3 class="white leftinfo">Book your slot before countdown ends <br> to avail special
-                                <b>30%</b>
-                                discount
-                            </h3>
-                            <button class="join leftbtn">Join Now!</button>
-                            <!-- <img src="https://source.unsplash.com/1200x800?gym" alt="Img1" /> -->
+                        <label class="left headfonts white" for="name">email</label>
+                        <input class="parafonts" type="text" name="email" id="myEmail"><span></span>
 
-                        </li>
-                        <li class="splide__slide img2">
-                            <h1 class="yellow">Train Together,<br> Stay Together</h1>
-                            <h3 class="white">Join gym with your partner and get special couple offer</h3>
-                            <button class="join">Join Now!</button>
-                        </li>
+                        <label class="left headfonts white" for="query">Message</label>
+                        <textarea class="parafonts" name="query" id="myQuery" cols="30"
+                            rows="2"></textarea><span></span>
 
-                        <li class="splide__slide img3">
-                            <h1 class="">Pick the dumbell on your most special day</h1>
-                            <h3 class="white">Register your self with us on your birthday to get our most
-                                precious
-                                offer
-                                and upgred
-                                youself before next birthday</h3>
-                            <button class="join">Join Now!</button>
-                        </li>
-                        <!-- <li class="splide__slide img4">
-                        </li> -->
-                    </ul>
+                        <button class="join leftbtn headfonts" id="contactBtn" type="submit">Submit</button>
+                    </form>
                 </div>
-            </div>
+                <div>
+                    <h4> <a class=" noTextDecoration headfonts white"
+                            href="https://www.google.com/maps/place/Dundas+St,+Ontario/@43.0639991,-80.9821942,17z/data=!3m1!4b1!4m5!3m4!1s0x882c1f30e4d03af1:0x36cff0970f651b24!8m2!3d43.0639991!4d-80.9800055">Address:</a>
+                    </h4>
+                    <p class="parafonts white">
+                        Dundas St. London
+                        N6B 3L5, ON
+                    </p>
+
+                    <h4 class="headfonts white">E-mail:</h4>
+                    <p><a class="noTextDecoration" href="mailto:smemon1884@conestogac.on.ca" class="parafonts white">
+                            strongman@strongman.ca
+                        </a>
+                    </p>
+                    <h4 class="headfonts white">Contact</h4>
+                    <p> <a class="noTextDecoration" href="tel:999-999-99999" class="parafonts white">
+                            999-999-99999
+                        </a></p>
+
+                </div>
+            </section>
+            <section id="FAQ">
+                <h4 class="headfonts black">Some Beauty FAQs</h4>
+
+            </section>
+            <section id="addReview"></section>
+            <section id="reviews"></section>
+            <section id="ratings"></section>
+
         </main>
         <footer class="white">Copyright 2021 &nbsp; All Rights Reserved- <strong>STRONGMAN FITNESS CENTER</strong>
         </footer>
@@ -125,7 +121,7 @@
         crossorigin="anonymous"></script>
 
     <!-- js files -->
-    <script src="JS/index.js"></script>
+    <script src="JS/review.js"></script>
 </body>
 
 </html>

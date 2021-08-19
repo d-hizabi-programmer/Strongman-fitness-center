@@ -1,0 +1,167 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* heading fonts */
+.headfonts {
+  font-family: "Graduate", cursive;
+  color: #ffc107;
+  font-weight: 500;
+}
+
+.headfonts:hover,
+#contactUs a:hover {
+  color: #c2c0bde3;
+}
+
+.headfonts:active,
+#contactUs a:active {
+  font-size: 1.1em;
+  color: white;
+  font-weight: 600;
+}
+
+/* paragraph fonts */
+.parafonts {
+  color: white;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid red; */
+  background-color: rgba(0, 0, 0, 0.897);
+}
+.left {
+  text-align: left;
+}
+
+.cenetr {
+  text-align: center;
+}
+/* navbar item class */
+.nav-link {
+  text-decoration: none;
+}
+
+/* aligining navbar items to the right */
+.navbar-nav {
+  /* border: 2px solid red; */
+  margin-left: auto;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bold;
+  margin: 0 2em 1em 2em;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  color: #343a40;
+}
+
+.blue {
+  color: #167ca6;
+  text-align: center;
+}
+
+.black {
+  color: black;
+}
+.white {
+  color: white;
+  /* text-align: center; */
+}
+
+/* For timer */
+body {
+  position: relative;
+}
+.heading {
+  position: absolute;
+  /* margin-left: -10%; */
+  top: 10%;
+  left: 0;
+}
+
+footer {
+  text-align: center;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+section:nth-of-type(even) {
+  background-color: white;
+}
+
+#contactUs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
+#contactUs :first-child {
+  width: 65%;
+  margin-right: 1em;
+}
+h4 {
+  padding-top: 0.5em;
+}
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* #contactUs div {
+  width: 40%;
+  /* border: 2px solid red; */
+/* }  */
+#contactForm input,
+textarea {
+  background-color: transparent;
+  width: 100%;
+  font-size: large;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  /* border-bottom: 2px inset #ffc107; */
+  /* border-bottom-color: ; */
+}
+#contactForm {
+  text-align: left;
+}
+
+#contactForm label {
+  text-align: left;
+  align-self: flex-start;
+  margin: 00.5em;
+}
+.noTextDecoration {
+  text-decoration: none;
+  color: white;
+}
+
+.join {
+  text-align: center;
+  margin-top: 2em;
+  width: 200px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #ffc107;
+  color: #343a40;
+  border: 2px solid #343a40;
+}
+.join:hover {
+  transition: 0.5s all ease-in;
+  transform: scale(110%);
+}
+
+span {
+  color: #c2c0bde3;
+}
