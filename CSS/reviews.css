@@ -173,7 +173,7 @@ span {
 
 /* +--------------------------Accordian--------- */
 .accordion {
-  background-color: #eee;
+  background-color: white;
   color: black;
   cursor: pointer;
   padding: 18px;
@@ -208,4 +208,9 @@ span {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+}
+
+.panel p {
+  padding: 1em;
+  border: 1px solid #c2c0bde3;
 }
