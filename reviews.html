@@ -24,10 +24,18 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
 
 
     <!-- jQuery CDn -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -163,8 +171,94 @@
 
 
             </section>
-            <section id="addReview"></section>
+            <section id="addReview">
+                <h4 class="headfonts center">Add a Review</h4>
+
+                <form action="" id="reviewForm">
+                    <label for="name" class="left headfonts white">Name:</label>
+
+                    <input type="text" name="name" id="name"><span class="parafonts left"></span>
+
+                    <label for="review" class="left headfonts white">Comment:</label>
+                    <textarea name="review" class="parafonts" id="review" cols="30" rows="2">
+
+                    </textarea><span class="parafonts left"></span>
+
+                    <div>
+                        <label id="starLable" class="left headfonts white">Ratings:</label>
+                        <div class="stars">
+                            <span class="fa fa-star" id="star1"></span>
+                            <span class="fa fa-star" id="star2"></span>
+                            <span class="fa fa-star" id="star3"></span>
+                            <span class="fa fa-star" id="star4"></span>
+                            <span class="fa fa-star" id="star5"></span>
+                        </div>
+                    </div>
+                    <button class="join leftbtn headfonts" id="reviewBtn" type="submit">Submit</button>
+
+                </form>
+            </section>
+
             <section id="reviews"></section>
+            <h4 class="headfonts center">User Reviews</h4>
+            <div class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="cardHolder">
+                                <div class="imgHolder">
+                                    <p class="headfonts">Saniya Memon</p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked "></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                </div>
+                                <div class="reviewHolder parafonts black">
+                                    Personal Trainer has been awesome to me. Their trainers are exceptional, the
+                                    overall vibe is great
+                                    and I have had nothing but good experiences. I definitely recommend them to my
+                                    friends and family.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="cardHolder">
+                                <div class="imgHolder">
+                                    <p class="headfonts">Saniya Memon</p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked "></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star "></span>
+                                </div>
+                                <div class="reviewHolder parafonts black">
+                                    Hands down, best choice I’ve made training at Strongman Fitness. VERY friendly team
+                                    who make me
+                                    actually want to go train. I look forward to walking through the doors and always
+                                    feel amazing when I leave.
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="cardHolder">
+                                <div class="imgHolder">
+                                    <p class="headfonts">Saniya Memon</p>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked "></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star "></span>
+                                </div>
+                                <div class="reviewHolder parafonts black">
+                                    Very nice experience. I bought 3 months membership!!!...
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
             <section id="ratings"></section>
 
         </main>

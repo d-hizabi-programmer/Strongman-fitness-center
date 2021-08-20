@@ -96,6 +96,12 @@ footer {
 
 section:nth-of-type(even) {
   background-color: white;
+  margin: 0.5em;
+}
+
+section:nth-of-type(odd) {
+  background-color: black;
+  /* margin: 0.5em; */
 }
 
 #contactUs {
@@ -103,7 +109,8 @@ section:nth-of-type(even) {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 1em;
+  /* margin: 1em; */
+  background-color: black;
 }
 #contactUs :first-child {
   width: 65%;
@@ -112,7 +119,8 @@ section:nth-of-type(even) {
 h4 {
   padding-top: 0.5em;
 }
-#contactForm {
+#contactForm,
+#reviewForm {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,33 +132,49 @@ h4 {
   /* border: 2px solid red; */
 /* }  */
 #contactForm input,
-textarea {
-  background-color: transparent;
+#contactForm textarea,
+#reviewForm input,
+#reviewForm textarea {
+  background-color: black;
+  color: white;
   width: 100%;
   font-size: large;
   border-top: none;
   border-right: none;
   border-left: none;
-  /* border-bottom: 2px inset #ffc107; */
+  margin: 1em;
+  border-bottom: 2px inset #343a40;
   /* border-bottom-color: ; */
 }
-#contactForm {
+
+#contactForm,
+#reviewForm {
   text-align: left;
 }
 
-#contactForm label {
+#contactForm label,
+#reviewForm label {
   text-align: left;
   align-self: flex-start;
   margin: 00.5em;
 }
+
 .noTextDecoration {
   text-decoration: none;
   color: white;
+}
+#reviewForm {
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  align-content: center;
+  justify-content: center;
 }
 
 .join {
   text-align: center;
   margin-top: 2em;
+  margin-bottom: 2em;
   width: 200px;
   height: 40px;
   border-radius: 5px;
@@ -168,7 +192,9 @@ span {
 }
 
 #FAQ {
-  padding: 1em;
+  /* border: 2px solid red; */
+  width: 100%;
+  margin: 0%;
 }
 
 /* +--------------------------Accordian--------- */
@@ -213,4 +239,66 @@ span {
 .panel p {
   padding: 1em;
   border: 1px solid #c2c0bde3;
+}
+
+/* ----------------------review slider----------------------------- */
+.splide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 25%; */
+}
+.splide__slide {
+  display: flex;
+  justify-items: center;
+  height: auto;
+}
+.cardHolder {
+  display: grid;
+
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  border: 2px solid #ffc107;
+  box-shadow: 5px 6px 6px rgba(0, 0, 0, 0.574), 6px 6px 6px rgba(0, 0, 0, 0.527);
+  margin: 1em;
+}
+.imgHolder {
+  /* width: 30%; */
+  text-align: center;
+  /* padding: 1em; */
+
+  height: fit-content;
+  /* margin: 7px auto; */
+}
+
+.reviewHolder {
+  margin: 1em;
+  text-align: center;
+}
+
+/* for rating stars */
+.unchecked {
+  color: #c2c0bde3;
+}
+.checked {
+  color: #ffc107;
+}
+
+#addReview {
+  background-color: black;
+  padding: 2em;
+  width: 100%;
+}
+#addReview div {
+  align-self: flex-start;
+}
+#starLable,
+.stars {
+  display: inline;
+  /* border: 2px solid red; */
+}
+
+.clickStar {
+  color: #ffc107;
 }
