@@ -39,18 +39,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// review splid
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide(".splide", {
-    type: "loop",
-    perPage: 3,
-    focus: "center",
-  }).mount();
-});
-var elms = document.getElementsByClassName("splide");
-for (var i = 0, len = elms.length; i < len; i++) {
-  new Splide(elms[i]).mount();
-}
+//review splid
 
 // for star rating
 
@@ -107,6 +96,19 @@ $("#star5").on("click", () => {
   }
 });
 
+//REVIEW PANEL
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide(".splide", {
+    type: "loop",
+    perPage: 1,
+    focus: "center",
+  }).mount();
+});
+var elms = document.getElementsByClassName("splide");
+for (var i = 0, len = elms.length; i < len; i++) {
+  new Splide(elms[i]).mount();
+}
+
 // review button click event
 $("#reviewBtn").click(function (evt) {
   evt.preventDefault();
@@ -117,9 +119,25 @@ $("#reviewBtn").click(function (evt) {
   } else {
     alert("Thank You for Rating us!");
 
-    // adding new review in review panel
-    var userName = $("#name").val();
-    var userReview = $("#review").val();
+    //
+    var htmlELments = ` <li class="splide__slide">
+     <div class="cardHolder">
+         <div class="imgHolder">
+            <p class="headfonts">SANIYAMEMON</p>
+            <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span>
+             <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+         </div>
+        <div class="reviewHolder parafonts black">
+           JKASHKHAjkskJK
+        </div>
+ </div>
+    </li>`;
+
+    document.querySelector(".splide__list").innerHTML = htmlELments;
+    console.log("CHilde:" + $(".splide__list").children().length);
 
     //reset page!
     $("#name").val("");
@@ -130,8 +148,8 @@ $("#reviewBtn").click(function (evt) {
     $("#star4").removeClass("clickStar");
     $("#star5").removeClass("clickStar");
 
-    console.log(
-      "Name:" + userName + "\n Comment:" + userReview + "stars:" + starCounter
-    );
+    // console.log(
+    //   "Name:" + userName + "\n Comment:" + userReview + "stars:" + starCounter
+    // );
   }
 });
